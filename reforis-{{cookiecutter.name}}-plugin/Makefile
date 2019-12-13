@@ -7,7 +7,6 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=reforis-{{cookiecutter.name}}-plugin
 PKG_VERSION:={{cookiecutter.version}}
 PKG_RELEASE:=1
 
@@ -29,19 +28,19 @@ include $(TOPDIR)/feeds/packages/lang/python/python3-package.mk
 include ../reforis/files/reforis-plugin.mk
 include ../reforis/files/reforis-translations.mk
 
-define Package/$(PKG_NAME)
-  TITLE:=$(PKG_NAME)
+define Package/reforis-{{cookiecutter.name}}-plugin
+  TITLE:=reforis-{{cookiecutter.name}}-plugin
   URL:={{cookiecutter.repo_url}}
   DEPENDS:= \
-    +reforis \
-  VARIANT=python3
+    +reforis
+  VARIANT:=python3
 endef
 
-define Package/$(PKG_NAME)/description
+define Package/reforis-{{cookiecutter.name}}-plugin/description
   {{cookiecutter.description}}
 endef
 
 REFORIS_TRANSLATIONS:=cs
 
-$(eval $(call ReForisPlugin,$(PKG_NAME),reforis_{{cookiecutter.name_snake}}))
+$(eval $(call ReForisPlugin,reforis-{{cookiecutter.name}}-plugin,reforis_{{cookiecutter.name_snake}}))
 # call BuildPackage <= assures OWR build system that this is package
