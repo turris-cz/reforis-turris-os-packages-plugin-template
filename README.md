@@ -2,7 +2,7 @@
 
 Packaging template for reForis plugins.
 
-## How-to
+## How-To
 
 1. Install [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)
 
@@ -21,7 +21,7 @@ If the `cookiecutter` command is not available try `python3 -m cookiecutter`.
 If you want to use template from specific branch e.g. `dev`
 
 ```bash
-cookiecutter https://gitlab.labs.nic.cz/turris/reforis/turris-os-packages-plugin-template --checkout dev
+cookiecutter https://gitlab.nic.cz/turris/reforis/turris-os-packages-plugin-template --checkout dev
 ```
 
 3. Add proper `foris-controller` plugin module to the `DEPENDS` variable in
