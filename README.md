@@ -1,21 +1,32 @@
-# turris-os-packages-plugin-template
+# Turris OS Packages Plugin Template
 
 Packaging template for reForis plugins.
 
- 
-## How to
+## How-to
+
 1. Install [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/)
-    ```bash
-    $ pip3 install cookiecutter
-    ```
+
+```bash
+pip install cookiecutter
+```
 
 2. Install template and fill template variables
-    ```bash
-    $ cookiecutter https://gitlab.labs.nic.cz/turris/reforis/turris-os-packages-plugin-template
-    ```
-    If `cookiecutter` command is not available try `python3 -m cookiecutter`.
 
-3. Add proper `foris-controller` plugin module to `DEPENDS` variable in `Makefile`.
+```bash
+cookiecutter https://gitlab.nic.cz/turris/reforis/turris-os-packages-plugin-template
+```
 
-4. Copy result directory to repository [turris-os-packages](https://gitlab.labs.nic.cz/turris/turris-os-packages/tree/master/web/reforis)
-into `web/reforis` directory.
+If the `cookiecutter` command is not available try `python3 -m cookiecutter`.
+
+If you want to use template from specific branch e.g. `dev`
+
+```bash
+cookiecutter https://gitlab.labs.nic.cz/turris/reforis/turris-os-packages-plugin-template --checkout dev
+```
+
+3. Add proper `foris-controller` plugin module to the `DEPENDS` variable in
+   `Makefile`.
+
+4. Copy the result directory to the repository
+   [turris-os-packages](https://gitlab.nic.cz/turris/os/packages/-/tree/master/web/reforis)
+   into the `web/reforis` directory.
