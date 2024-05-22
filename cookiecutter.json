@@ -1,7 +1,8 @@
 {
     "name": "example-plugin",
-    "name_snake" : "{{ cookiecutter.name|lower|replace('-', '_') }}",
+    "name_snake": "{{ cookiecutter.name|lower|replace('-', '_') }}",
     "repo_url": "",
     "version": "0.1.0",
-    "description": ""
+    "description": "",
+    "year": "{% now 'utc', '%Y' %}"
 }
