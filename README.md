@@ -27,6 +27,11 @@ cookiecutter https://gitlab.nic.cz/turris/reforis/turris-os-packages-plugin-temp
 3. Add proper `foris-controller` plugin module to the `DEPENDS` variable in
    `Makefile`.
 
+```makefile
+DEPENDS:=\
+   +foris-controller-example-module
+```
+
 4. Copy the result directory to the repository
    [turris-os-packages](https://gitlab.nic.cz/turris/os/packages/-/tree/master/web/reforis)
    into the `web/reforis` directory.
