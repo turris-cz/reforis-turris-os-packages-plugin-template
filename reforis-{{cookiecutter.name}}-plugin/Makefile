@@ -22,6 +22,7 @@ PKG_LICENSE_FILES:=LICENSE
 
 PKG_BUILD_DEPENDS:=\
 	node/host \
+	hatch-reforis/host
 
 PYTHON3_PKG_WHEEL_NAME:=reforis_{{cookiecutter.name_snake}}
 
